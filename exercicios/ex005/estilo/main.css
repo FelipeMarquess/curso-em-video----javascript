@@ -1,0 +1,37 @@
+body {
+    font: normal 15pt Arial;
+    background-color: rgb(70, 142, 236);
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto; /*Serve para centralizar a box section (só funciona com caixas em que a largura é fixa.*/
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+}
+
+/*centralizando todo o conteudo verticalmente.*/
+main#container-principal{
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

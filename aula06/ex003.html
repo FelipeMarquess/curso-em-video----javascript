@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            font: normal 20pt Arial;
+            color: white;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número:')); //O window.prompt sempre retornará uma STRING, mesmo eu colocando um número!
+        var n2 = Number(window.prompt('Digite outro número:'));
+        var soma = n1 + n2;
+        window.alert(`A soma de ${n1} + ${n2} = ${soma}`)
+        /* o + tem o efeito de somar (números) ou concatenar (Strings)
+            number + number = o + irá somar!
+            string + string = o + irá concatenar!
+            number + string = o number será transformado em uma string, e irá concatenar!
+            o simbolo de + só ira SOMAR, quando ambas as váriaveis forem do tipo NUMBER!
+        */
+        
+    </script>
+</body>
+</html>
