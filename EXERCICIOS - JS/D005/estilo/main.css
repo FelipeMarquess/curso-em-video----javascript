@@ -1,0 +1,17 @@
+body {
+    color: white;
+    background-color: rgb(10, 122, 122);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    height: 35px;
+}
+
+#interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
