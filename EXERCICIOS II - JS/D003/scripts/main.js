@@ -9,10 +9,12 @@ btn.onclick = function() {
     if (inicio.value.length == 0){
         window.alert(`Adicione um número para o "INÍCIO!"`)
         inicio.focus();
+        resu.innerHTML = `Impossível contar...`;
     }
     else if (final.value.length == 0 || final.value == 0){
         window.alert(`O "FIM" não pode ser igual a 0 ou ser deixado em BRANCO!`);
         final.focus();
+        resu.innerHTML = `Impossível contar...`;
     }
     else if (pass.value.length == 0 || pass.value == 0){
         window.alert(`PASSO inválido! Estaremos considerando o PASSO, como 1!`)
@@ -25,15 +27,16 @@ btn.onclick = function() {
         if (ini <= fim){
             resu.innerHTML = '';
             for(ini; ini <= fim; ini += passo){
-                resu.innerHTML += ini;
+                resu.innerHTML += `${ini} &#x1F449 `;
             }
         }
         else if (ini >= fim){
             resu.innerHTML = '';
             for(ini; ini >= fim; ini -= passo){
-                resu.innerHTML += ini;
+                resu.innerHTML += `${ini} &#x1F449 `;
             }
         }
+        res.innerHTML += ` &#x1F3C1`;
     }
     else {
         
@@ -44,14 +47,15 @@ btn.onclick = function() {
         if (ini <= fim){
             resu.innerHTML = '';
             for(ini; ini <= fim; ini += passo){
-                resu.innerHTML += ini;
+                resu.innerHTML += `${ini} &#x1F449 `;
             }
         }
         else if (ini >= fim){
             resu.innerHTML = '';
             for(ini; ini >= fim; ini -= passo){
-                resu.innerHTML += ini;
+                resu.innerHTML += `${ini} &#x1F449 `;
             }
-        }   
+        }
+        res.innerHTML += ` &#x1F3C1`;
     }
 }
